@@ -1,0 +1,28 @@
+<!-- Contenido de la carta -->
+<div class="container" style="min-height: 500px">
+  <h1 class="mt-5 mb-4 text-center">Menú del Restaurante</h1>
+
+  <!-- Sección de platos -->
+  <div class="row m-4">
+    <div class="col-md-12">
+      <h2 class="mb-4">Platos Principales</h2>
+      <ul class="list-group">
+        <li
+          *ngFor="let product of productsData; let i = index"
+          class="d-flex justify-content-between align-items-center mb-3 product"
+        >
+          <div class="d-flex gap-4 align-items-center">
+            <div class="">
+              <img [src]="product.img" alt="" class="product_image" />
+            </div>
+            <div>
+              <h5 class="product_title">{{ product.title }}</h5>
+              <p class="badge p-2">s/. {{ product.price }}</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm">Agregar al carrito</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

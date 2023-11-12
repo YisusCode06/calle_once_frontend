@@ -1,0 +1,25 @@
+.product {
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid white;
+}
+.product:hover {
+  background-color: #f5f5f5;
+  box-shadow: 1px 1px 20px solid black;
+  border: 1px solid #c9c9c9;
+}
+.product_image {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 10px solid black;
+}
+
+.product_title {
+  font-size: 2rem;
+}
+.badge {
+  background-color: #22f596;
+  color: black;
+}
